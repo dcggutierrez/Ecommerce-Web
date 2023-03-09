@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <div>
       <Head/>
-      <Navbar/>
       <Search/>
+      <Navbar/>
     </div>
   )
 }
