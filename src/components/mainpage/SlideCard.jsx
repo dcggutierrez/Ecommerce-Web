@@ -10,6 +10,8 @@ const SlideCard = () => {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 3500,
+    speed: 1500,
     autoplay: true,
     appendDots: (dots) => {
       return <ul style={{ margin: "0px" }}>{dots}</ul>

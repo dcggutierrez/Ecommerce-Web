@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../../components/assets/images/logo.svg'
 import { Link } from 'react-router-dom'
 
-const Search = () => {
+const Search = ({cartItem}) => {
   window.addEventListener("scroll",function(){
     const search = document.querySelector(".search")
     search.classList.toggle("active", window.scrollY > 100)
@@ -11,9 +11,9 @@ const Search = () => {
     <div>
         <section className="search">
           <div className="container c_flex">
-            <div className="logo width">
+            <Link to ="/" className='logo width'>
               <img src={logo} alt="" />
-            </div>
+            </Link>
             <div className="search-box f_flex">
               <i className="fa fa-search"></i>
               <input type="text" placeholder='Search and hit enter...' />
@@ -26,7 +26,7 @@ const Search = () => {
               <div className="cart">
                 <Link to='/cart'>
                   <i className="fa fa-shopping-bag icon-circle"></i>
-                  <span>0</span>
+                  <span>{cartItem.length === 0  ? "" : cartItem.length}</span>
                 </Link>
               </div>
             </div>

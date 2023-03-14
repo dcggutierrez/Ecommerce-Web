@@ -1,3 +1,7 @@
+.home {
+    margin-top: 50px;
+}
+
 .homeSlide h1 {
     font-size: 45px;
 }
@@ -31,6 +35,15 @@
     margin: auto;
 }
 
-.homeSlide .box {
-    display: flex;
+.homeSlide .box .left {
+    width: 70%;
+}
+
+.homeSlide .box .right{
+    width: 30%;
+}
+
+.homeSlide .box img {
+    height: 100%;
+    width: 100%;
 }

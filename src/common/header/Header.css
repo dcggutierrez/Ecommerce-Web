@@ -32,6 +32,7 @@
 .search-box {
     width: 80%;
     border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 .search-box i {
@@ -141,6 +142,10 @@ header ul li a:hover {
     background-color: #fff;
     box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
     transition: 0.5s;
+}
+
+.right.row.RText span {
+    margin-right: 5px;
 }
 
 @media (max-width:768px) {
